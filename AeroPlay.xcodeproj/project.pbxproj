@@ -10,10 +10,10 @@
 		02B68B0F1D023C58006AE62A /* AirplayServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B68B071D023C58006AE62A /* AirplayServer.swift */; };
 		02B68B101D023C58006AE62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B68B081D023C58006AE62A /* AppDelegate.swift */; };
 		02B68B111D023C58006AE62A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B68B091D023C58006AE62A /* Assets.xcassets */; };
-		02B68B121D023C58006AE62A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B68B0B1D023C58006AE62A /* Main.storyboard */; };
 		02B68B141D023C58006AE62A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B68B0E1D023C58006AE62A /* ViewController.swift */; };
 		02B68B1D1D023D24006AE62A /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B68B181D023D16006AE62A /* CocoaAsyncSocket.framework */; };
 		02B68B1E1D023D24006AE62A /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02B68B181D023D16006AE62A /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		02B68B221D023F20006AE62A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B68B201D023F20006AE62A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,14 +31,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		02B68B071D023C58006AE62A /* AirplayServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirplayServer.swift; path = AeroPlay/AirplayServer.swift; sourceTree = "<group>"; };
-		02B68B081D023C58006AE62A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AeroPlay/AppDelegate.swift; sourceTree = "<group>"; };
-		02B68B091D023C58006AE62A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AeroPlay/Assets.xcassets; sourceTree = "<group>"; };
-		02B68B0C1D023C58006AE62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
-		02B68B0D1D023C58006AE62A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AeroPlay/Info.plist; sourceTree = "<group>"; };
-		02B68B0E1D023C58006AE62A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AeroPlay/ViewController.swift; sourceTree = "<group>"; };
+		02B68B071D023C58006AE62A /* AirplayServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirplayServer.swift; path = ../AirplayServer.swift; sourceTree = "<group>"; };
+		02B68B081D023C58006AE62A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "AeroPlay-Demo/AppDelegate.swift"; sourceTree = "<group>"; };
+		02B68B091D023C58006AE62A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "AeroPlay-Demo/Assets.xcassets"; sourceTree = "<group>"; };
+		02B68B0D1D023C58006AE62A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "AeroPlay-Demo/Info.plist"; sourceTree = "<group>"; };
+		02B68B0E1D023C58006AE62A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "AeroPlay-Demo/ViewController.swift"; sourceTree = "<group>"; };
 		02B68B181D023D16006AE62A /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Frameworks/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		02B68B1A1D023D16006AE62A /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		02B68B211D023F20006AE62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AeroPlay-Demo/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		02F55AEE1CFFCEB0008579F7 /* AeroPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 		02B68B151D023C77006AE62A /* Demo App */ = {
 			isa = PBXGroup;
 			children = (
-				02B68B0B1D023C58006AE62A /* Main.storyboard */,
+				02B68B201D023F20006AE62A /* Main.storyboard */,
 				02B68B081D023C58006AE62A /* AppDelegate.swift */,
 				02B68B0E1D023C58006AE62A /* ViewController.swift */,
 				02B68B091D023C58006AE62A /* Assets.xcassets */,
@@ -81,7 +81,8 @@
 				02B68B071D023C58006AE62A /* AirplayServer.swift */,
 			);
 			name = AeroPlay;
-			sourceTree = "<group>";
+			path = "/Users/CA/AeroPlay/AeroPlay-Demo";
+			sourceTree = "<absolute>";
 		};
 		02B68B191D023D16006AE62A /* CommonCrypto */ = {
 			isa = PBXGroup;
@@ -170,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B68B111D023C58006AE62A /* Assets.xcassets in Resources */,
-				02B68B121D023C58006AE62A /* Main.storyboard in Resources */,
+				02B68B221D023F20006AE62A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,13 +191,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		02B68B0B1D023C58006AE62A /* Main.storyboard */ = {
+		02B68B201D023F20006AE62A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				02B68B0C1D023C58006AE62A /* Base */,
+				02B68B211D023F20006AE62A /* Base */,
 			);
 			name = Main.storyboard;
-			path = AeroPlay/Base.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,7 +294,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = AeroPlay/Info.plist;
+				INFOPLIST_FILE = "AeroPlay-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,7 +317,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = AeroPlay/Info.plist;
+				INFOPLIST_FILE = "AeroPlay-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
