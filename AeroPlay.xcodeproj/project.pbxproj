@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02B68B0F1D023C58006AE62A /* AirplayServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B68B071D023C58006AE62A /* AirplayServer.swift */; };
+		02B68B101D023C58006AE62A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B68B081D023C58006AE62A /* AppDelegate.swift */; };
+		02B68B111D023C58006AE62A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B68B091D023C58006AE62A /* Assets.xcassets */; };
+		02B68B121D023C58006AE62A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B68B0B1D023C58006AE62A /* Main.storyboard */; };
+		02B68B141D023C58006AE62A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B68B0E1D023C58006AE62A /* ViewController.swift */; };
+		02B68B1D1D023D24006AE62A /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B68B181D023D16006AE62A /* CocoaAsyncSocket.framework */; };
+		02B68B1E1D023D24006AE62A /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 02B68B181D023D16006AE62A /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		02B68B1F1D023D24006AE62A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				02B68B1E1D023D24006AE62A /* CocoaAsyncSocket.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02B68B071D023C58006AE62A /* AirplayServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AirplayServer.swift; path = AeroPlay/AirplayServer.swift; sourceTree = "<group>"; };
+		02B68B081D023C58006AE62A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = AeroPlay/AppDelegate.swift; sourceTree = "<group>"; };
+		02B68B091D023C58006AE62A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = AeroPlay/Assets.xcassets; sourceTree = "<group>"; };
+		02B68B0C1D023C58006AE62A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		02B68B0D1D023C58006AE62A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AeroPlay/Info.plist; sourceTree = "<group>"; };
+		02B68B0E1D023C58006AE62A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = AeroPlay/ViewController.swift; sourceTree = "<group>"; };
+		02B68B181D023D16006AE62A /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Frameworks/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		02B68B1A1D023D16006AE62A /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		02F55AEE1CFFCEB0008579F7 /* AeroPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AeroPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02F55AEB1CFFCEB0008579F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B68B1D1D023D24006AE62A /* CocoaAsyncSocket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B68B151D023C77006AE62A /* Demo App */ = {
+			isa = PBXGroup;
+			children = (
+				02B68B0B1D023C58006AE62A /* Main.storyboard */,
+				02B68B081D023C58006AE62A /* AppDelegate.swift */,
+				02B68B0E1D023C58006AE62A /* ViewController.swift */,
+				02B68B091D023C58006AE62A /* Assets.xcassets */,
+				02B68B0D1D023C58006AE62A /* Info.plist */,
+			);
+			name = "Demo App";
+			sourceTree = "<group>";
+		};
+		02B68B161D023C88006AE62A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02B68B181D023D16006AE62A /* CocoaAsyncSocket.framework */,
+				02B68B191D023D16006AE62A /* CommonCrypto */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02B68B171D023C8F006AE62A /* AeroPlay */ = {
+			isa = PBXGroup;
+			children = (
+				02B68B071D023C58006AE62A /* AirplayServer.swift */,
+			);
+			name = AeroPlay;
+			sourceTree = "<group>";
+		};
+		02B68B191D023D16006AE62A /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				02B68B1A1D023D16006AE62A /* module.map */,
+			);
+			name = CommonCrypto;
+			path = Frameworks/CommonCrypto;
+			sourceTree = "<group>";
+		};
+		02F55AE51CFFCEB0008579F7 = {
+			isa = PBXGroup;
+			children = (
+				02B68B161D023C88006AE62A /* Frameworks */,
+				02B68B171D023C8F006AE62A /* AeroPlay */,
+				02B68B151D023C77006AE62A /* Demo App */,
+				02F55AEF1CFFCEB0008579F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02F55AEF1CFFCEB0008579F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02F55AEE1CFFCEB0008579F7 /* AeroPlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02F55AED1CFFCEB0008579F7 /* AeroPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F55AFD1CFFCEB0008579F7 /* Build configuration list for PBXNativeTarget "AeroPlay" */;
+			buildPhases = (
+				02F55AEA1CFFCEB0008579F7 /* Sources */,
+				02F55AEB1CFFCEB0008579F7 /* Frameworks */,
+				02F55AEC1CFFCEB0008579F7 /* Resources */,
+				02B68B1F1D023D24006AE62A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AeroPlay;
+			productName = AirPlay3;
+			productReference = 02F55AEE1CFFCEB0008579F7 /* AeroPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02F55AE61CFFCEB0008579F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Colton Anglin";
+				TargetAttributes = {
+					02F55AED1CFFCEB0008579F7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 02F55AE91CFFCEB0008579F7 /* Build configuration list for PBXProject "AeroPlay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02F55AE51CFFCEB0008579F7;
+			productRefGroup = 02F55AEF1CFFCEB0008579F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02F55AED1CFFCEB0008579F7 /* AeroPlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02F55AEC1CFFCEB0008579F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B68B111D023C58006AE62A /* Assets.xcassets in Resources */,
+				02B68B121D023C58006AE62A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02F55AEA1CFFCEB0008579F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B68B141D023C58006AE62A /* ViewController.swift in Sources */,
+				02B68B101D023C58006AE62A /* AppDelegate.swift in Sources */,
+				02B68B0F1D023C58006AE62A /* AirplayServer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02B68B0B1D023C58006AE62A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02B68B0C1D023C58006AE62A /* Base */,
+			);
+			name = Main.storyboard;
+			path = AeroPlay/Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02F55AFB1CFFCEB0008579F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02F55AFC1CFFCEB0008579F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		02F55AFE1CFFCEB0008579F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = AeroPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.colton.AeroPlay;
+				PRODUCT_NAME = AeroPlay;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Frameworks/CommonCrypto";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+			};
+			name = Debug;
+		};
+		02F55AFF1CFFCEB0008579F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = AeroPlay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.colton.AeroPlay;
+				PRODUCT_NAME = AeroPlay;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Frameworks/CommonCrypto";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02F55AE91CFFCEB0008579F7 /* Build configuration list for PBXProject "AeroPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F55AFB1CFFCEB0008579F7 /* Debug */,
+				02F55AFC1CFFCEB0008579F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02F55AFD1CFFCEB0008579F7 /* Build configuration list for PBXNativeTarget "AeroPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F55AFE1CFFCEB0008579F7 /* Debug */,
+				02F55AFF1CFFCEB0008579F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02F55AE61CFFCEB0008579F7 /* Project object */;
+}
